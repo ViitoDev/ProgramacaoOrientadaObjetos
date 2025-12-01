@@ -9,9 +9,11 @@ class Library:
     def __str__(self):
         return self.name
     
-    def list_Libraries():
+    @classmethod
+    def list_Libraries(cls):
+        print(f"{'Nome da biblioteca'.ljust(25)} | {'Status'}")
         for library in Library.libraries:
-            print(f"{library.name} | {library.active}")
+            print(f"{library.name.ljust(25)} | {library.active}")
 
     def toggle_state(self):
         self._active = not self._active
