@@ -8,6 +8,9 @@ shopping_library = Library("Shopping Library")
 book1 = Book("1984", "George Orwell", 30.00, "084-1922")
 magazine1 = Magazine("National Geographic", "John Doe", 15.0, "5")
 
+book1.apply_dicount()
+magazine1.apply_dicount()
+
 city_library.add_item(book1)
 city_library.add_item(magazine1)
 
